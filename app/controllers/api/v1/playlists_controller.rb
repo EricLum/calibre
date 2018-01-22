@@ -32,7 +32,7 @@ class Api::V1::PlaylistsController < ApplicationController
 
   private
   def playlist_params
-    params.require(:playlist).permit(:type, :title, :artist, :likes, :filesource)
+    params.require(:playlist).permit(:kind, :title, :artist, :likes, :filesource)
   end
 
 end

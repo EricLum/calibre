@@ -7,6 +7,7 @@ class Api::V1::CommentsController < ApplicationController
 
   def create
     @comment = Comment.new(comment_params)
+  byebug
     if @comment.valid?
       @comment.save
       render json: @comment
@@ -32,7 +33,7 @@ class Api::V1::CommentsController < ApplicationController
 
   private
   def comment_params
-    params.require(:comment).permit(:content, :content_id, :medium_id)
+    params.require(:comment).permit(:content, :user_id, :medium_id)
   end
 
 end

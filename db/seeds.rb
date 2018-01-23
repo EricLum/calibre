@@ -17,14 +17,12 @@ Comment.destroy_all
 end
 
 #create media
-5.times do
   Medium.create!(kind: "video", title: "DEVELOPERS ", artist: "Microsoft guy", likes: 3, filesource: "Media/video.mp4")
   Medium.create!(kind: "video", title: "Android Wireless Earbuds ", artist: "Tech guy", likes: 1, filesource: "Media/hd.mp4")
   Medium.create!(kind: "audio", title: "Pokemon R Song ", artist: "Pokemon people", likes: 0, filesource: "Media/pokemonr.mp3")  # Figure out how to make the filesources happen.
-  Medium.create!(kind: "video", title: "Spongebob Wallet ", artist: "Cartoon people", likes: 3, filesource: "Media/wallet.mp4"),
-  Medium.create!(kind: "audio", title: "Pokemon X Song ", artist: "Pokemon people", likes: 1, filesource: "Media/pokemonx.mp3"),
+  Medium.create!(kind: "video", title: "Spongebob Wallet ", artist: "Cartoon people", likes: 3, filesource: "Media/wallet.mp4")
+  Medium.create!(kind: "audio", title: "Pokemon X Song ", artist: "Pokemon people", likes: 1, filesource: "Media/pokemonx.mp3")
   Medium.create!(kind: "video", title: "Spogebob Texas ", artist: "Cartoon people", likes: 0, filesource: "Media/texas.mp4")
-end
 
 #create commments
 5.times do

@@ -5,6 +5,15 @@ class Api::V1::UsersController < ApplicationController
     render json: @users
   end
 
+  def find_or_create
+    @user = User.find_or_create(user_params)
+    if @user
+      render json: @user
+    else
+      redirect_to action: "create"
+    end
+  end
+
   def create
     @user = User.new(user_params)
     if @user.valid?
@@ -32,7 +41,7 @@ class Api::V1::UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:type, :title, :artist, :likes, :filesource)
+    params.require(:user).permit(:username, :theme)
   end
 
 end

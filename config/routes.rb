@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
     resources :users, :media, :playlists, :comments
+    post 'users/login', to: 'users#find_or_create'
     end
   end
 end

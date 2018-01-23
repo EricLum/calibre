@@ -6,7 +6,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def find_or_create
-    @user = User.find_or_create(user_params)
+    @user = User.find_or_create_by(user_params)
     if @user
       render json: @user
     else

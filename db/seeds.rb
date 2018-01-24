@@ -23,7 +23,11 @@ end
   Medium.create!(kind: "video", title: "Spongebob Wallet ", artist: "Cartoon people", likes: 3, filesource: "Media/wallet.mp4")
   Medium.create!(kind: "audio", title: "Pokemon X Song ", artist: "Pokemon people", likes: 1, filesource: "Media/pokemonx.mp3")
   Medium.create!(kind: "video", title: "Spogebob Texas ", artist: "Cartoon people", likes: 0, filesource: "Media/texas.mp4")
-
+  Medium.create!(kind: "video", title: "Wanderland", artist: "Hermanos Inglesos", likes: 0, filesource: "Media/Hermanos Inglesos feat. MeMe - Wanderland.mp4")
+  Medium.create!(kind: "video", title: "Cat Maze", artist: "Cat lover", likes: 0, filesource: "Media/AMEOW-ZING 50 Box Cat Maze!.mp4")
+  Medium.create!(kind: "video", title: "Wanderland", artist: "Hermanos Inglesos", likes: 0, filesource: "Media/Hermanos Inglesos feat. MeMe - Wanderland.mp4")
+  Medium.create!(kind: "video", title: "Talking Babies", artist: "parents", likes: 0, filesource: "Media/Talking Twin Babies - PART 2 - OFFICIAL VIDEO.mp4")
+  
 #create commments
 5.times do
   Comment.create(content: Faker::Lorem.sentence, user_id: User.all.sample.id , medium_id: Medium.all.sample.id)

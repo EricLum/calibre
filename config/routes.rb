@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     resources :users, :media, :playlists, :comments
     post 'users/login', to: 'users#find_or_create'
     post 'playlists/user/:id', to: 'playlists#return_playlist'
+    get 'media/:id/comments', to: 'media#mediaComments'
     end
   end
 end

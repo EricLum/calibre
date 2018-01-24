@@ -7,7 +7,7 @@ class Api::V1::PlaylistsController < ApplicationController
 
   def return_playlist
     @user = User.find(params[:id])
-  
+
     render json: @user.media
   end
 
@@ -38,7 +38,7 @@ class Api::V1::PlaylistsController < ApplicationController
 
   private
   def playlist_params
-    params.require(:playlist).permit(:kind, :title, :artist, :likes, :filesource)
+    params.require(:playlist).permit(:user_id, :medium_id)
   end
 
 end

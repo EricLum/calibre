@@ -5,6 +5,11 @@ class Api::V1::MediaController < ApplicationController
     render json: @media
   end
 
+  def show
+    @medium = Medium.find(params[:id])
+    render json: @medium
+  end
+
   def create
     @medium = Medium.new(medium_params)
     if @medium.valid?

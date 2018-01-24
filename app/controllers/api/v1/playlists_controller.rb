@@ -5,6 +5,12 @@ class Api::V1::PlaylistsController < ApplicationController
     render json: @playlists
   end
 
+  def return_playlist
+    @user = User.find(params[:id])
+  
+    render json: @user.media
+  end
+
   def create
     @playlist = Playlist.new(playlist_params)
     if @playlist.valid?

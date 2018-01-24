@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     namespace :v1 do
     resources :users, :media, :playlists, :comments
     post 'users/login', to: 'users#find_or_create'
+    post 'playlists/user/:id', to: 'playlists#return_playlist'
     end
   end
 end

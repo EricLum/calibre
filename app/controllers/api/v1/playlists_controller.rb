@@ -39,6 +39,6 @@ class Api::V1::PlaylistsController < ApplicationController
   private
   def playlist_params
     params.require(:playlist).permit(:user_id, :medium_id)
-  end 
+  end
 
 end

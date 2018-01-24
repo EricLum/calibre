@@ -5,6 +5,12 @@ class Api::V1::MediaController < ApplicationController
     render json: @media
   end
 
+  def mediaComments
+    @media = Medium.find(params[:id])
+    @comments = @media.comments
+    render json: @comments
+  end
+
   def show
     @medium = Medium.find(params[:id])
     render json: @medium

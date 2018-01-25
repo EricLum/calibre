@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     post 'users/login', to: 'users#find_or_create'
     post 'playlists/user/:id', to: 'playlists#return_playlist'
     delete 'playlists/:user_id/:medium_id', to: 'playlists#destroy'
+    get 'media/:id/comments', to: 'media#mediaComments'
     end
   end
 end

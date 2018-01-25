@@ -32,7 +32,7 @@ class Api::V1::PlaylistsController < ApplicationController
   end
 
   def destroy
-    @playlist = Playlist.find(params[:id])
+    @playlist = Playlist.find_by(user_id: params[:user_id], medium_id: params[:medium_id])
     @playlist.destroy
   end
 

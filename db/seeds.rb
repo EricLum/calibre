@@ -41,9 +41,12 @@ end
   Medium.create!(kind: "audio", title: "The Lazy Song ", artist: "Bruno Mars", likes: rand(1..20), filesource: "Media/lazy.mp3")
 
 #create commments
-5.times do
-  Comment.create(content: Faker::Lorem.sentence, user_id: User.all.sample.id , medium_id: Medium.all.sample.id)
+Medium.all.each do |medium|
+  rand(5..20).times do
+    Comment.create(content: Faker::Lorem.sentence, user_id: User.all.sample.id , medium_id: medium.id)
+  end
 end
+
 
 #create playlists
 5.times do

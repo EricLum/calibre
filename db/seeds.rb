@@ -17,22 +17,28 @@ Comment.destroy_all
 end
 
 #create media
-  Medium.create!(kind: "video", title: "DEVELOPERS ", artist: "Microsoft guy", likes: 3, filesource: "Media/video.mp4")
-  Medium.create!(kind: "video", title: "Android Wireless Earbuds ", artist: "Tech guy", likes: 1, filesource: "Media/hd.mp4")
-  Medium.create!(kind: "audio", title: "Pokemon R Song ", artist: "Pokemon people", likes: 0, filesource: "Media/pokemonr.mp3")  # Figure out how to make the filesources happen.
-  Medium.create!(kind: "video", title: "Spongebob Wallet ", artist: "Cartoon people", likes: 3, filesource: "Media/wallet.mp4")
-  Medium.create!(kind: "audio", title: "Pokemon X Song ", artist: "Pokemon people", likes: 1, filesource: "Media/pokemonx.mp3")
-  Medium.create!(kind: "video", title: "Spogebob Texas ", artist: "Cartoon people", likes: 0, filesource: "Media/texas.mp4")
-  Medium.create!(kind: "video", title: "Wanderland ", artist: "Hermanos Inglesos", likes: 0, filesource: "Media/Hermanos Inglesos feat. MeMe - Wanderland.mp4")
-  Medium.create!(kind: "video", title: "Cat Maze ", artist: "Cat lover", likes: 0, filesource: "Media/AMEOW-ZING 50 Box Cat Maze!.mp4")
-  Medium.create!(kind: "video", title: "Wanderland ", artist: "Hermanos Inglesos", likes: 0, filesource: "Media/Hermanos Inglesos feat. MeMe - Wanderland.mp4")
-  Medium.create!(kind: "video", title: "Talking Babies ", artist: "parents", likes: 0, filesource: "Media/Talking Twin Babies - PART 2 - OFFICIAL VIDEO.mp4")
-  Medium.create!(kind: "video", title: "Community - Halloween ", artist: "Community NBC", likes: 31, filesource: "Media/CommunityHalloween.mp4")
-  Medium.create!(kind: "video", title: "Community - Dean ", artist: "Community NBC", likes: 30, filesource: "Media/CommunityDean.mp4")
-  Medium.create!(kind: "video", title: "Community - Biblioteca ", artist: "Community NBC", likes: 30, filesource: "Media/CommunityBiblioteca.mp4")
-  Medium.create!(kind: "video", title: "Community - Darkest Timeline ", artist: "Community NBC", likes: 46, filesource: "Media/CommunityTimeline.mp4")
-  Medium.create!(kind: "audio", title: "Jazzy French ", artist: "bensounds.com", likes: 2, filesource: "Media/JazzyFrench.mp3")
-  Medium.create!(kind: "audio", title: 'Jazz Comedy ', artist: "bensounds.com", likes: 3, filesource: "Media/JazzComedy.mp3")
+  Medium.create!(kind: "video", title: "DEVELOPERS ", artist: "Steve Ballmer", likes: rand(1..20), filesource: "Media/developers.mp4")
+  Medium.create!(kind: "video", title: "Android Wireless Earbuds ", artist: "MKB HD", likes: rand(1..20), filesource: "Media/airpod.mp4")
+  Medium.create!(kind: "video", title: "Wanderland" , artist: "Hermanos Inglesos", likes: rand(1..20), filesource: "Media/wanderland.mp4")
+  Medium.create!(kind: "video", title: "Cat Maze ", artist: "Cole and Marmalade", likes: rand(1..20), filesource: "Media/cat-maze.mp4")
+  Medium.create!(kind: "video", title: "Talking Babies ", artist: "jayrandall22011", likes: rand(1..20), filesource: "Media/baby.mp4")
+  Medium.create!(kind: "video", title: "Community - Halloween ", artist: "Community NBC", likes: rand(1..20), filesource: "Media/CommunityHalloween.mp4")
+  Medium.create!(kind: "video", title: "Community - Dean ", artist: "Community NBC", likes: rand(1..20), filesource: "Media/CommunityDean.mp4")
+  Medium.create!(kind: "video", title: "Community - Biblioteca ", artist: "Community NBC", likes: rand(1..20), filesource: "Media/CommunityBiblioteca.mp4")
+  Medium.create!(kind: "video", title: "Community - Darkest Timeline ", artist: "Community NBC", likes: rand(1..20), filesource: "Media/CommunityTimeline.mp4")
+  Medium.create!(kind: "video", title: "Spongebob Wallet ", artist: "Cartoon people", likes: rand(1..20), filesource: "Media/wallet.mp4")
+  Medium.create!(kind: "video", title: "Spogebob Texas ", artist: "Cartoon people", likes: rand(1..20), filesource: "Media/texas.mp4")
+  Medium.create!(kind: "video", title: "Calibre Tour ", artist: "Calibre Dev Team", likes: rand(1..20), filesource: "Media/rick.mp4")
+  Medium.create!(kind: "video", title: "Pepe Silva ", artist: "FX", likes: rand(1..20), filesource: "Media/silva.mp4")
+  Medium.create!(kind: "video", title: "Avengers ", artist: "Marvel", likes: rand(1..20), filesource: "Media/marvel.mp4")
+
+  Medium.create!(kind: "audio", title: 'Jazz Comedy ', artist: "bensounds.com", likes: rand(1..20), filesource: "Media/JazzComedy.mp3")
+  Medium.create!(kind: "audio", title: "Jazzy French ", artist: "bensounds.com", likes: rand(1..20), filesource: "Media/JazzyFrench.mp3")
+  Medium.create!(kind: "audio", title: "Memories ", artist: "Bensound", likes: rand(1..20), filesource: "Media/memories.mp3")
+  Medium.create!(kind: "audio", title: "Happy Rock ", artist: "Bensound", likes: rand(1..20), filesource: "Media/rock.mp3")
+  Medium.create!(kind: "audio", title: "Going Higher ", artist: "Bensound", likes: rand(1..20), filesource: "Media/higher.mp3")
+  Medium.create!(kind: "audio", title: "Billie Jean ", artist: "Michael Jackson", likes: rand(1..20), filesource: "Media/jean.mp3")
+  Medium.create!(kind: "audio", title: "The Lazy Song ", artist: "Bruno Mars", likes: rand(1..20), filesource: "Media/lazy.mp3")
 
 #create commments
 5.times do

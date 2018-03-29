@@ -1,24 +1,3 @@
-# README
+Calibre
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This repository is the BACK end.  The FRONT end with a more complete read me can be found here: https://github.com/misslesliehsu/Calibre-Front-End

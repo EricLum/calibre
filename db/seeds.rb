@@ -27,7 +27,7 @@ end
   Medium.create!(kind: "video", title: "Community - Biblioteca ", artist: "Community NBC", likes: rand(1..20), filesource: "Media/CommunityBiblioteca.mp4")
   Medium.create!(kind: "video", title: "Community - Darkest Timeline ", artist: "Community NBC", likes: rand(1..20), filesource: "Media/CommunityTimeline.mp4")
   Medium.create!(kind: "video", title: "Spongebob Wallet ", artist: "Cartoon people", likes: rand(1..20), filesource: "Media/wallet.mp4")
-  Medium.create!(kind: "video", title: "Spogebob Texas ", artist: "Cartoon people", likes: rand(1..20), filesource: "Media/texas.mp4")
+  Medium.create!(kind: "video", title: "Spongebob Texas ", artist: "Cartoon people", likes: rand(1..20), filesource: "Media/texas.mp4")
   Medium.create!(kind: "video", title: "Calibre Tour ", artist: "Calibre Dev Team", likes: rand(1..20), filesource: "Media/rick.mp4")
   Medium.create!(kind: "video", title: "Pepe Silva ", artist: "FX", likes: rand(1..20), filesource: "Media/silva.mp4")
   Medium.create!(kind: "video", title: "Avengers ", artist: "Marvel", likes: rand(1..20), filesource: "Media/marvel.mp4")
